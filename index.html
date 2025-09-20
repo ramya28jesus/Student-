@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ramya - Student Portfolio</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      font-family: "Poppins", sans-serif;
+
+      background: #f4f6f9;
+
+      color: #2c3e50;
+
+    }
+
+    header {
+
+      background: #2e86de;
+
+      color: white;
+
+      text-align: center;
+
+      padding: 40px 20px;
+
+    }
+
+    header h1 {
+
+      margin: 0;
+
+      font-size: 2.5rem;
+
+    }
+
+    header p {
+
+      font-size: 1.2rem;
+
+    }
+
+    nav {
+
+      display: flex;
+
+      justify-content: center;
+
+      background: #1b4f72;
+
+      flex-wrap: wrap;
+
+    }
+
+    nav a {
+
+      color: white;
+
+      padding: 14px 20px;
+
+      text-decoration: none;
+
+      transition: 0.3s;
+
+    }
+
+    nav a:hover {
+
+      background: #2874a6;
+
+    }
+
+    section {
+
+      padding: 40px;
+
+      max-width: 900px;
+
+      margin: auto;
+
+    }
+
+    section h2 {
+
+      color: #1b4f72;
+
+      margin-bottom: 10px;
+
+    }
+
+    .card {
+
+      background: white;
+
+      padding: 20px;
+
+      margin: 15px 0;
+
+      border-radius: 10px;
+
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      background: #1b4f72;
+
+      color: white;
+
+      padding: 15px;
+
+      margin-top: 30px;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 10px 20px;
+
+      background: #2e86de;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 5px;
+
+      transition: 0.3s;
+
+      margin-top: 10px;
+
+    }
+
+    .btn:hover {
+
+      background: #1b4f72;
+
+    }
+
+    .contact-info p {
+
+      margin: 5px 0;
+
+      font-size: 1.1rem;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Ramya</h1>
+
+    <p>2nd Year Student | Passionate about IT</p>
+
+  </header>
+
+  <nav>
+
+    <a href="#about">About</a>
+
+    <a href="#education">Education</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="card">
+
+      <p>Hello! My name is <b>Ramya</b>.  
+
+      I am currently studying <b>2nd Year</b> at <b>Jeppiaar College of Arts and Science</b>.  
+
+      I completed my schooling at <b>Government Higher Secondary School, Sholinganallur</b>.  
+
+      I am passionate about the <b>IT field</b> and excited to build my career in technology.</p>
+
+    </div>
+
+  </section>
+
+  <section id="education">
+
+    <h2>Education</h2>
+
+    <div class="card">
+
+      <ul>
+
+        <li><b>Undergraduate:</b> Jeppiaar College of Arts and Science (2nd Year)</li>
+
+        <li><b>Schooling:</b> Government Higher Secondary School, Sholinganallur</li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="card contact-info">
+
+      <p><b>📞 Mobile:</b> <a href="tel:8122168971">8122168971</a></p>
+
+      <p><b>📧 Email:</b> <a href="mailto:ramya28jesus@gmail.com">ramya28jesus@gmail.com</a></p>
+
+      <a href="mailto:ramya28jesus@gmail.com" class="btn">Email Me</a>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <p>© 2025 Ramya | Student Portfolio</p>
+
+  </footer>
+
+  <script>
+
+    // Smooth scrolling effect
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+      anchor.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+          behavior: "smooth"
+
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
